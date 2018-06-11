@@ -1,3 +1,14 @@
+# File: Strings_in_Python.py
+# Description: Methods for processing strings in Python
+# Environment: PyCharm and Anaconda environment
+#
+# MIT License
+# Copyright (c) 2018 Valentyn N Sichkar
+# github.com/sichkar-valentyn
+#
+# Reference to:
+# [1] Valentyn N Sichkar. Methods for processing strings in Python // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/Processing_strings_in_Python (date of access: XX.XX.XXXX)
+
 # Standard methods for processing strings
 
 
@@ -115,26 +126,4 @@ from random import random
 x = random()
 print(x)
 print('{:.3}'.format(x))
-
-
-# Implementing the task
-s = input()
-a = input()
-b = input()
-
-if s.find(a) < 0:
-    print(0)
-elif s.find(a) >= 0 and a == b:
-    print('Impossible')
-elif s.find(a) >= 0 and a != b:
-    c = True
-    i = 0
-    while c:
-        s = s.replace(a, b)
-        i += 1
-        print(s)
-        if s.find(a) < 0:
-            c = False
-    print(i)
-
 
